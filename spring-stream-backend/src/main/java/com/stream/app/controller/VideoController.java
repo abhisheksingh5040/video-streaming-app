@@ -39,8 +39,7 @@ public class VideoController {
                 .status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(CustomMessage.builder()
                         .message("Video not uploaded")
-                        .success(Boolean.FALSE)
-                        .build());
+                        .success(Boolean.FALSE).build());
     }
 
     @GetMapping("/stream/{videoId}")
